@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -17,27 +17,27 @@
     <!-- Beginning header -->
     <header>
         <!-- Beginning nav -->
-        <nav>
-            <h1><a href="/">Restaurant Reviews</a></h1>
-        </nav>
         <!-- Beginning breadcrumb -->
-        <ul id="breadcrumb">
-            <li><a href="/">Home</a></li>
-        </ul>
-        <!-- End breadcrumb -->
-        <!-- End nav -->
+        <nav role="navigation" aria-label="Breadcrumb">
+            <h1><a href="/">Restaurant Reviews</a></h1>
+            <ul id="breadcrumb">
+                <li><a href="/">Home</a></li>
+            </ul>
+            <!-- End breadcrumb -->
+            <!-- End nav -->
+        </nav>
     </header>
     <!-- End header -->
     <!-- Beginning main -->
     <main id="maincontent">
         <!-- Beginning map -->
-        <section id="map-container" aria-label="Restaurant on the map">
-            <div id="map"></div>
+        <section id="map-container">
+            <div id="map" aria-label="location" role="application"></div>
         </section>
         <!-- End map -->
         <!-- Beginning restaurant -->
         <section id="restaurant-container" aria-label="Restaurant information">
-            <h1 id="restaurant-name"></h1>
+            <h2 id="restaurant-name"></h2>
             <img id="restaurant-img">
             <p id="restaurant-cuisine"></p>
             <p id="restaurant-address"></p>
@@ -62,6 +62,7 @@
     <script type="text/javascript" src="js/dbhelper.js"></script>
     <!-- Main javascript file -->
     <script type="text/javascript" src="js/restaurant_info.js"></script>
+    <script type="application/javascript" charset="utf-8" src="js/register_sw.js"></script>
     <!--script type="application/javascript" charset="utf-8" src="js/register_sw.js"></script -->
     <!-- Google Maps -->
     <!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_tKbW6A5pQ-eupxI56myUnHLqYCzOjKo&libraries=places&callback=initMap"></script> -->
